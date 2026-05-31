@@ -1,0 +1,26 @@
+
+Option 1: 
+cd "e:\PyCharm Projects\Investment_agent1"
+.\venv\Scripts\python.exe -u run_investment_agent.py MU TSM AVGO AMD
+
+Option 2:
+.\venv\Scripts\python.exe -u run_investment_agent.py MU TSM AVGO AMD
+
+Option 3: 
+src/run_investment_agent.py from 
+
+The project is complete and fully verified. Here's a summary of what's ready:
+
+All 8 LangGraph nodes compile and connect correctly in the graph:
+
+data_acquisition → yfinance/Alpha Vantage/FRED/SEC EDGAR data fetching with SQLite caching
+company_analysis → LLM lifecycle classification (Early Growth → Declining) with heuristic fallback
+dcf_calculator → WACC via CAPM, FCF projection, Gordon Growth terminal value
+assumption_review → Human-in-the-loop interrupt point with formatted assumption display
+sensitivity_analysis → 5×5 WACC×TGR table, 10,000-run Monte Carlo, bear/base/bull scenarios, tornado data
+moat_analyzer → Morningstar 5-source scoring (0–50) + LLM qualitative narrative
+report_generator → LLM markdown report + 7 Plotly charts with template fallback
+conversation_manager → Multi-turn Q&A with full analysis context
+To start using it, open [notebooks/investment_analysis.ipynb](e:\PyCharm Projects\Investment_agent1\notebooks\investment_analysis.ipynb) in JupyterLab, 
+add your OPENAI_API_KEY to a .env file at the project root, and run cells 1–7 in order.
+ The graph pauses after cell 2 for you to review/override assumptions before resuming.

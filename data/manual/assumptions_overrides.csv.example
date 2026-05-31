@@ -1,0 +1,2 @@
+ticker,wacc,terminal_growth_rate,revenue_growth_y1,revenue_growth_y2,revenue_growth_y3,revenue_growth_y4,revenue_growth_y5,model_type
+# MU,0.12,0.025,0.15,0.12,0.10,0.08,0.06,3-stage
